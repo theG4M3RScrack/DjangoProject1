@@ -1,0 +1,19 @@
+{% extends 'todo/index.html' %}
+
+{% block content %}
+
+<h1>PRUEBA</h1>
+{{ personas }}
+{% for persona in personas %}
+
+    <h1>{{ persona.nombres }}</h1>
+
+    <p>{{ persona.apellidos }}</p>
+
+    <p>{{ persona.correo_electronico }}</p>
+    <p>{{ persona.biografia }}</p>
+    <p>{{ persona.titulo_academico }}</p>
+
+{% endfor %}
+
+{% endblock %}
