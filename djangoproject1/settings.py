@@ -28,7 +28,7 @@ DEBUG = True
 #ALLOWED_HOSTS = []
 # para que funcione en linea Python Anywhere
 ALLOWED_HOSTS = ['theg4m3rscrack.pythonanywhere.com']
-
+# Profe no vea esto
 
 # Application definition
 
