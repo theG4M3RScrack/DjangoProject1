@@ -75,17 +75,23 @@ WSGI_APPLICATION = 'djangoproject1.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 # base de datos a la cual acceder:
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'pycharmDB',
+#        'USER': 'postgres',
+#        'PASSWORD': '277353',
+#        'HOST': 'localhost',
+#        'PORT': '5432',
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pycharmDB',
-        'USER': 'postgres',
-        'PASSWORD': '277353',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
